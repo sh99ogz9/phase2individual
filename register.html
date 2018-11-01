@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- FontAwesome CSS-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Boostrap Helper-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-select-country.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-formhelpers.min.css">
+    <!-- My CSS -->
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	
+	<title>LumoSave</title>
+</head>
+<body class="bg-transparent">
+	
+<div class="container-fullwidth">
+    <nav class="navbar navbar-expand-md ml-auto text-warning bg-dark">
+        <div class="container">
+            <a class="navbar-brand text-warning" href="/"><i class="far fa-lightbulb" style="color:#ffc107"></i> LumoSave</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="custom-toggler">
+                <span class="navbar-toggler-icon"></span>
+                </div>
+            </button>
+
+            <div class="collapse navbar-collapse " id="myNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link text-warning" href="about.html" >About</a></li>
+                    <li class="nav-item"><a class="nav-link text-warning" href="purchase.html">Purchase</a></li>
+                    <li class="nav-item"><a class="nav-link text-warning" href="contact.html">Contact Us</a></li>
+                </ul>
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link text-warning" href="register.html">Register</a></li>
+                    <li class="nav-item"><a class="nav-link text-warning" href="login.html">Login</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+</div>
+
+<main class="container">
+     
+    <section data-parent="#pages" id="register">
+        <div class="card bg-dark text-light">
+            <div class="card-body">
+                <h5 class="card-title">Register</h5>
+
+                <form action="/php/register.php" method="post">
+
+                    <div class="form-row">
+                        <div class="form-group col-sm-6">
+                            <label for="signup_groupName">Group Name<span class="required">*</span></label>
+                            <input type="text" class="form-control" name="signup_groupName" id="signup_groupName" placeholder="Group Name" required>
+                        </div>
+                        
+                        <div class="form-group col-sm-6">
+                            <label for="signup_memberCount">Current Number of Members</label>
+                            <input type="number" class="form-control" name="signup_memberCount" id="signup_memberCount" placeholder="Number of Members">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-sm-6">
+                            <label for="signup_district">District</label>
+                            <input type="text" name="signup_district" id="signup_district" placeholder="District" class="form-control">
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="signup_country">Country<span class="required">*</span></label>
+                            <select class="input-medium bfh-countries form-control" data-country="UG" name="signup_country" placeholder="Country" id="signup_country"></select>
+                        </div>
+
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-sm-6">
+                            <label for="signup_phone">Phone<span class="required">*</span></label>
+                            <input type="tel" class="form-control" name="signup_phone" id="signup_phone" placeholder="Phone" required>
+                        </div>
+
+                        <div class="form-group col-sm-6">
+                            <label for="signup_email">Email<span class="required">*</span></label>
+                            <input type="email" class="form-control" name="signup_email" placeholder="Email" id="signup_email" required>
+<!--                            <small id="emailHelp" class="form-text text-muted">Please enter your email if you have one.</small>-->
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-sm-6">
+                            <label for="signup_password">Account Password<span class="required">*</span></label>
+                            <input type="password" class="form-control" name="signup_password" placeholder="Password" id="signup_password" required>
+
+                        </div>
+
+                        <div class="form-group col-sm-6">
+                            <label for="signup_repassword">Confirm Password<span class="required">*</span></label>
+                            <input type="password" class="form-control" name="signup_repassword" placeholder="Confirm Password" id="signup_repassword" required>
+                        </div>
+                    </div>
+
+                    <input type="submit" class="btn btn-warning" name="submit" id="submit" value="Register">
+
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer class="footer">
+    <div class="container-fullwidth bg-dark text-center"> 
+        <small class="font-weight-light"><a href="about.html" class="text-warning" style="text-decoration: none;">About Us</a></small><span class="text-muted">  • </span>
+        <small class="font-weight-light"><a href="contact.html" class="text-warning" style="text-decoration: none;">Contact Us</a></small><span class="text-muted"> •</span>
+        
+        <small class="font-weight-light"><a href="#" class="text-warning" style="text-decoration: none;"><i class="fab fa-twitter"></i></a></small><span class="text-muted"> •</span>
+        <small class="font-weight-light"><a href="#" class="text-warning" style="text-decoration: none;"><i class="fab fa-facebook"></i></a></small><span class="text-muted"> •</span>
+        <small class="font-weight-light"><a href="#" class="text-warning" style="text-decoration: none;"><i class="fab fa-instagram"></i></a></small><span class="text-muted"> •</span>
+    </div>
+</footer>
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<!-- Bootstrap Helpers -->
+<script src="js/bootstrap-formhelpers.min.js"></script>
+
+<script>
+    $('.navbar-nav>li>a').on('click', function(){
+        $('.navbar-collapse').collapse('hide');
+    })
+</script>
+
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- FontAwesome CSS-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Boostrap Helper-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-select-country.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-formhelpers.min.css">
+    <!-- My CSS -->
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	
+	<title>LumoSave</title>
+</head>
+<body class="bg-transparent">
+	
+<div class="container-fullwidth">
+    <nav class="navbar navbar-expand-md ml-auto text-warning bg-dark">
+        <div class="container">
+            <a class="navbar-brand text-warning" href="/"><i class="far fa-lightbulb" style="color:#ffc107"></i> LumoSave</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="custom-toggler">
+                <span class="navbar-toggler-icon"></span>
+                </div>
+            </button>
+
+            <div class="collapse navbar-collapse " id="myNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link text-warning" href="about.html" >About</a></li>
+                    <li class="nav-item"><a class="nav-link text-warning" href="purchase.html">Purchase</a></li>
+                    <li class="nav-item"><a class="nav-link text-warning" href="contact.html">Contact Us</a></li>
+                </ul>
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link text-warning" href="register.html">Register</a></li>
+                    <li class="nav-item"><a class="nav-link text-warning" href="login.html">Login</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+</div>
+
+<main class="container">
+     
+    <section data-parent="#pages" id="purchase">
+        <div class="card bg-dark text-light">
+            <div class="card-body">
+                <h5 class="card-title">Purchase</h5>
+                <p class="card-text mb-3">Select type and quantity of the solar products that you're group would like to purchase. After you've made your selection, please submit the order. A LumoSave representative will get in touch with your shortly.</p>
+                
+                            
+                <form action="/php/purchase.php" method="post">
+                            
+                <div class="row justify-content-md-around mx-3 ">
+                    <div class="card col-lg-5 col-md-12 bg-light text-dark mb-4">
+                        <img class="card-img-top" src="img/tier1.jpg">
+                        <div class="card-body d-flex flex-column">
+                            <div>
+                                <h5 class="card-title">Tier 1 Pay-As-You-Go SHS</h5>
+                                <p>Product includes:</p>
+
+                                <ul>
+                                    <li><p>1 8W Solar Panel</p></li>
+                                    <li><p>1 Rechargeable FM/USB Radio</p></li>
+                                    <li><p>1 Solar ontrol Unit with Lithium Battery</p></li>
+                                    <li><p>4 Bright 1.2W LED Bulbs</p></li>
+                                    <li><p>1 5-in-1 Phone Charge Cable</p></li>
+                                    <li><p>1 Custom Charge Cable</p></li>
+                                    <li><p>1 Rechargeable LED Torch</p></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="mt-auto">
+                                <p class="mt-atuo"><span class="font-weight-bold mt-3">$30 Deposit + </span>$0.60 Per Day Usage Fee</p>
+
+                                <input type="number" class="form-control" name="productA" id="productA" placeholder="Qty">
+                            </div>
+                        </div>
+                            
+                    
+                    </div>           
+                    
+                    <div class="card col-lg-5 col-md-12 bg-light text-dark mb-4">
+                        <img class="card-img-top" src="img/tier2.jpg">
+                        <div class="card-body d-flex flex-column">
+                            <div>
+                                <h5 class="card-title">Tier 2 Pay-As-You-Go SHS</h5>
+                                <p>Product includes:</p>
+
+                                <ul>
+                                    <li><p>Solar Control Unit with StarTimes Satellite</p></li>
+                                    <li><p>20W high quality solar panel</p></li>
+                                    <li><p>20″ digital TV</p></li>
+                                    <li><p>2 LED light bulbs with cables and switches</p></li>
+                                    <li><p>Phone charging USB with 5 standard connections</p></li>
+                                    <li><p>2 Year Warranty on Solar panel, Battery, TV and Light; 1 year warranty on all other accessories</p></li>
+                                    <li><p>Customer ownership within 1 year</p></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="mt-auto">    
+                                <p><span class="font-weight-bold mt-3">$70 Deposit + </span>$0.90 Per Day Usage Fee</p>
+
+                                <input type="number" class="form-control" name="productB" id="productB" placeholder="Qty">
+                            </div>
+
+                            
+                        </div>
+                    </div>   
+                </div>
+            
+                <div class="row justify-content-md-around mx-3">
+                    <div class="card col-lg-5 col-md-12 bg-light text-dark mb-4">
+                        <img class="card-img-top" src="img/solarFan.jpg">
+                        <div class="card-body d-flex flex-column">
+                            <div>
+                                <h5 class="card-title">Solar Fan</h5>
+                                <p>16" fan with 15W solar panel.</p>
+                                <p>Includes 3-speeds and USB charging capability.</p>
+                            </div>
+                                
+                            <div class="mt-auto">
+                                <p class="font-weight-bold mt-3">$100</p>
+                                <input type="number" class="form-control" name="productC" id="productC" placeholder="Qty">
+                            </div>
+
+                        </div>
+                    </div>           
+                    
+                    <div class="card col-lg-5 col-md-12 bg-light text-dark mb-4">
+                        <img class="card-img-top" src="img/solarTV.jpg">
+                        <div class="card-body d-flex flex-column">
+                            <div>
+                                <h5 class="card-title">Solar TV</h5>
+                                <p>22" LED TV with Satellite and DVBT2.0 capability.</p>
+                                <p>Can deliver up to 10 hours of view time on full charge.</p>
+                            </div>
+                            <div class="mt-auto">
+                                <p class="font-weight-bold mt-3">$200</p>
+                                <input type="number" class="form-control" name="productD" id="productD" placeholder="Qty">
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+                 
+                              
+                <div class="row justify-content-md-around mx-3">
+                    <div class="card bg-light text-dark mb-4 col-lg-11 col-sm-12">
+                        <div class="card-body">
+                            <div class="form-row">
+                                <div class="form-group col-lg-5 col-md-12">
+                                    <input type="text" class="form-control" name="groupName" id="groupName" placeholder="Group Name" required>
+                                </div>
+                                <div class="form-group col-lg-5 col-md-12">
+                                    <input type="number" class="form-control" name="groupPhone" id="groupPhone" placeholder="Phone Number" required>
+                                </div>
+                                <div class="form-group col-lg-2 col-md-12">
+                                    <input type="submit" class="btn btn-warning btn-block" name="submit" id="submit" value="Submit">
+                                </div>
+                            </div>
+                        </div>
+                    </div>                                 
+                </div>                
+             
+            
+                </form>
+            
+            </div>
+        </div>
+    </section>
+
+</main>
+
+
+<footer class="footer">
+    <div class="container-fullwidth bg-dark text-center"> 
+        <small class="font-weight-light"><a href="about.html" class="text-warning" style="text-decoration: none;">About Us</a></small><span class="text-muted">  • </span>
+        <small class="font-weight-light"><a href="contact.html" class="text-warning" style="text-decoration: none;">Contact Us</a></small><span class="text-muted"> •</span>
+        
+        <small class="font-weight-light"><a href="#" class="text-warning" style="text-decoration: none;"><i class="fab fa-twitter"></i></a></small><span class="text-muted"> •</span>
+        <small class="font-weight-light"><a href="#" class="text-warning" style="text-decoration: none;"><i class="fab fa-facebook"></i></a></small><span class="text-muted"> •</span>
+        <small class="font-weight-light"><a href="#" class="text-warning" style="text-decoration: none;"><i class="fab fa-instagram"></i></a></small><span class="text-muted"> •</span>
+    </div>
+</footer>
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<!-- Bootstrap Helpers -->
+<script src="js/bootstrap-formhelpers.min.js"></script>
+
+<script>
+    $('.navbar-nav>li>a').on('click', function(){
+        $('.navbar-collapse').collapse('hide');
+    })
+</script>
+
+</body>
+</html>
